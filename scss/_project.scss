@@ -1,0 +1,45 @@
+#project {
+  background-color: #f7f7f7;
+  .project-item-container {
+    padding-right: 300px;
+    padding-left: 300px;
+    .project-item {
+      img {
+        width: 70%;
+        height: auto;
+      }
+      .project-title {
+        text-transform: none !important;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      .project-description {
+        max-width: 400px;
+      }
+      .detail-btn {
+        font-size: 0.8rem;
+        border: 1px solid #999;
+        width: 90px;
+        padding: 5px;
+        border-radius: 20px;
+        cursor: pointer;
+        &:hover {
+          @include transition-all;
+          border: 1px solid fade-out(#999, 0.5);
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .project-item-container {
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+  }
+  @media (max-width: 600px) {
+    .project-item-container {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+}

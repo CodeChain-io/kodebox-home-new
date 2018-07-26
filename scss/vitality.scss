@@ -1,0 +1,22 @@
+// Core variables and mixins
+$themePrimary: #EF4035;
+$themeDark: #313131;
+$themeDarken: #1d1d1d;
+$themeDescription: #5c5c5c;
+@import "mixins.scss";
+// Global Styles
+@import "global.scss";
+@import "typography.scss";
+// Components
+@import "navbar.scss";
+@import "masthead.scss";
+@import "project.scss";
+@import "events.scss";
+@import "team.scss";
+@import "talk.scss";
+@import "media.scss";
+@import "partners.scss";
+@import "footer.scss";
+// Bootstrap and Plugin Overrides
+@import "bootstrap-overrides.scss";
+@import "owl-carousel-overrides.scss";

@@ -1,0 +1,69 @@
+.team-container {
+  .item {
+    position: relative;
+    margin-bottom: 30px;
+    .name {
+      text-transform: none;
+      font-size: 1.2rem;
+      @include heading-font;
+    }
+    .rank {
+      font-size: 1rem;
+    }
+    .team-img {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .team-join-us-img {
+      width: 300px;
+      height: 300px;
+    }
+    .team-img-container {
+      position: relative;
+      overflow: hidden;
+      width: 300px;
+      height: 300px;
+      &:hover {
+        .team-img {
+          width: 320px;
+          height: 320px;
+          transition: all 0.5s;
+        }
+      }
+    }
+    .line {
+      width: 100px;
+      height: 1px;
+      background: #ddd;
+    }
+    .team-caption {
+      .list-team-social {
+        li {
+          .inactive {
+            width: 23px;
+            height: 23px;
+            filter: opacity(20%);
+            margin-right: 5px;
+            margin-left: 5px;
+          }
+          a {
+            .active {
+              width: 23px;
+              height: 23px;
+              filter: opacity(70%);
+              margin-right: 5px;
+              margin-left: 5px;
+            }
+            &:hover {
+              filter: opacity(40%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

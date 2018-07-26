@@ -1,0 +1,62 @@
+footer.footer {
+  position: relative;
+  @include background-cover;
+  @include background-fixed;
+  height: 350px;
+  .overlay {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .copyright-container {
+    position: absolute;
+    bottom: 0;
+    background-color: #1F1F1F;
+    width: 100%;
+    color: white;
+  }
+  .link-container {
+    color: white;
+    font-size: 2rem;
+    .link-text {
+      margin-top: 60px;
+      font-size: 1.5rem;
+    }
+    li {
+      a {
+        color: white;
+        &:hover {
+          color: fade-out(white, 0.5);
+        }
+      }
+      margin-right: 10px;
+      margin-left: 10px;
+      cursor: pointer;
+      @include transition-all;
+      &:hover {
+        color: fade-out(white, 0.5);
+      }
+    }
+    .img-icon {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 5px;
+      @include transition-all;
+      &:hover {
+        filter: opacity(50%);
+      }
+    }
+    .gitter-icon {
+      filter: brightness(0) invert(1);
+      &:hover {
+        filter: brightness(0) invert(0.5);
+      }
+    }
+  }
+}
