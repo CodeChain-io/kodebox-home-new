@@ -25,7 +25,12 @@
     <!-- Custom styles for this theme-->
     <!-- Uncomment the color scheme you want to use! Red is chosen by default!-->
     <link href="css/vitality.css?v=20190102" rel="stylesheet" type="text/css">
-    <script type="text/javascript">window.location.replace("https://codechain.io")</script>
+    <script type="text/javascript">
+      var protocol = window.location.protocol
+      if (protocol === 'http:') {
+        window.location.replace(window.location.href.replace('http://', 'https://'))
+      }
+    </script>
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-101144979-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -43,10 +48,12 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">HOME</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#project">PROJECTS</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">TEAM</a></li>
+            <!-- li.nav-item-->
+            <!--   a.nav-link.js-scroll-trigger(href='#team') TEAM-->
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#talks">TALKS</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#events">EVENTS</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#media">MEDIA</a></li>
+            <li class="nav-item"><a class="nav-link" href="./announcement.html">공고</a></li>
           </ul>
         </div>
       </div>
@@ -69,7 +76,7 @@
         <h2 class="wow fadeIn">PROJECTS</h2>
         <div class="project-item-container pt-sm-0 pt-lg-5">
           <div class="row justify-content-center mb-5 mb-lg-0 wow fadeIn">
-            <div class="col-lg-12">
+            <div class="col-lg-6 col-md-12">
               <div class="project-item py-3 py-sm-3 py-lg-0">
                 <div class="project-img-container"><img class="project-img-1" src="img/project/project1.png"></div>
                 <p class="lead project-title">CodeChain</p>
@@ -77,285 +84,19 @@
                 <div class="detail-btn mx-auto"><a href="https://codechain.io" target="_blank">View more</a></div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="page-section" id="team">
-      <div class="container text-center">
-        <h2 class="wow fadeIn">TEAM</h2>
-        <div class="team-container mt-5">
-          <div class="row">
-                <div class="col-lg-4 col-md-6 wow fadeIn mb-3">
-                  <div class="item">
-                    <div class="team-img-container mx-auto"><img class="team-img" src="img/team/1.png" alt=""></div>
-                    <div class="team-caption">
-                      <p class="name mt-3 mb-0">Kwang Yul Seo</p>
-                      <p class="description rank mb-1">CEO</p>
-                      <div class="line my-2 mx-auto"></div>
-                      <ul class="list-inline list-team-social">
-                        <li class="list-inline-item"><a href="https://medium.com/@kwangseo" target="_blank"><img class="active" src="img/team/medium.png"></a>
-                        </li>
-                        <li class="list-inline-item"><a href="https://github.com/kseo" target="_blank"><img class="active" src="img/team/github.png"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn mb-3">
-                  <div class="item">
-                    <div class="team-img-container mx-auto"><img class="team-img" src="img/team/2.png" alt=""></div>
-                    <div class="team-caption">
-                      <p class="name mt-3 mb-0">Mi Sun Cho</p>
-                      <p class="description rank mb-1">COO</p>
-                      <div class="line my-2 mx-auto"></div>
-                      <ul class="list-inline list-team-social">
-                        <li class="list-inline-item"><a href="https://medium.com/@kodebox_cho" target="_blank"><img class="active" src="img/team/medium.png"></a>
-                        </li>
-                        <li class="list-inline-item"><a href="https://twitter.com/kodebox_cho" target="_blank"><img class="active" src="img/team/twitter.png"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn mb-3">
-                  <div class="item">
-                    <div class="team-img-container mx-auto"><img class="team-img" src="img/team/4.png" alt=""></div>
-                    <div class="team-caption">
-                      <p class="name mt-3 mb-0">Juhyung Park</p>
-                      <p class="description rank mb-1">Software Engineer</p>
-                      <div class="line my-2 mx-auto"></div>
-                      <ul class="list-inline list-team-social">
-                        <li class="list-inline-item"><a href="https://medium.com/@majecty" target="_blank"><img class="active" src="img/team/medium.png"></a>
-                        </li>
-                        <li class="list-inline-item"><a href="https://github.com/majecty" target="_blank"><img class="active" src="img/team/github.png"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn mb-3">
-                  <div class="item">
-                    <div class="team-img-container mx-auto"><img class="team-img" src="img/team/5.png" alt=""></div>
-                    <div class="team-caption">
-                      <p class="name mt-3 mb-0">JinGyeong Jeong</p>
-                      <p class="description rank mb-1">Software Engineer</p>
-                      <div class="line my-2 mx-auto"></div>
-                      <ul class="list-inline list-team-social">
-                        <li class="list-inline-item"><a href="https://medium.com/@jjgjoojis" target="_blank"><img class="active" src="img/team/medium.png"></a>
-                        </li>
-                        <li class="list-inline-item"><a href="https://github.com/joojis" target="_blank"><img class="active" src="img/team/github.png"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn mb-3">
-                  <div class="item">
-                    <div class="team-img-container mx-auto"><img class="team-img" src="img/team/6.png" alt=""></div>
-                    <div class="team-caption">
-                      <p class="name mt-3 mb-0">Seulgi Kim</p>
-                      <p class="description rank mb-1">Software Engineer</p>
-                      <div class="line my-2 mx-auto"></div>
-                      <ul class="list-inline list-team-social">
-                        <li class="list-inline-item"><a href="https://medium.com/@seulgi.kim" target="_blank"><img class="active" src="img/team/medium.png"></a>
-                        </li>
-                        <li class="list-inline-item"><a href="https://github.com/sgkim126" target="_blank"><img class="active" src="img/team/github.png"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn mb-3">
-                  <div class="item">
-                    <div class="team-img-container mx-auto"><img class="team-img" src="img/team/7.png" alt=""></div>
-                    <div class="team-caption">
-                      <p class="name mt-3 mb-0">Seung Woo Kim</p>
-                      <p class="description rank mb-1">Software Engineer</p>
-                      <div class="line my-2 mx-auto"></div>
-                      <ul class="list-inline list-team-social">
-                        <li class="list-inline-item"><a href="https://medium.com/@koreanboy1120" target="_blank"><img class="active" src="img/team/medium.png"></a>
-                        </li>
-                        <li class="list-inline-item"><a href="https://github.com/ScarletBlue" target="_blank"><img class="active" src="img/team/github.png"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn mb-3">
-                  <div class="item">
-                    <div class="team-img-container mx-auto"><img class="team-img" src="img/team/8.png" alt=""></div>
-                    <div class="team-caption">
-                      <p class="name mt-3 mb-0">Gilyoung Kim</p>
-                      <p class="description rank mb-1">Software Engineer</p>
-                      <div class="line my-2 mx-auto"></div>
-                      <ul class="list-inline list-team-social">
-                        <li class="list-inline-item"><a href="https://medium.com/@xpdlf1004" target="_blank"><img class="active" src="img/team/medium.png"></a>
-                        </li>
-                        <li class="list-inline-item"><a href="https://github.com/xpdlf1004" target="_blank"><img class="active" src="img/team/github.png"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn mb-3">
-                  <div class="item">
-                    <div class="team-img-container mx-auto"><img class="team-img" src="img/team/9.png" alt=""></div>
-                    <div class="team-caption">
-                      <p class="name mt-3 mb-0">Joon Mo Yang</p>
-                      <p class="description rank mb-1">Software Engineer</p>
-                      <div class="line my-2 mx-auto"></div>
-                      <ul class="list-inline list-team-social">
-                        <li class="list-inline-item"><a href="https://medium.com/@joonmo.yang" target="_blank"><img class="active" src="img/team/medium.png"></a>
-                        </li>
-                        <li class="list-inline-item"><a href="https://github.com/Kais-DkM" target="_blank"><img class="active" src="img/team/github.png"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn mb-3">
-                  <div class="item">
-                    <div class="team-img-container mx-auto"><img class="team-img" src="img/team/13.png" alt=""></div>
-                    <div class="team-caption">
-                      <p class="name mt-3 mb-0">Hyunsik Jeong</p>
-                      <p class="description rank mb-1">Software Engineer</p>
-                      <div class="line my-2 mx-auto"></div>
-                      <ul class="list-inline list-team-social">
-                        <li class="list-inline-item"><a href="https://medium.com/@rbtree" target="_blank"><img class="active" src="img/team/medium.png"></a>
-                        </li>
-                        <li class="list-inline-item"><a href="https://github.com/jhs7jhs" target="_blank"><img class="active" src="img/team/github.png"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn mb-3">
-                  <div class="item">
-                    <div class="team-img-container mx-auto"><img class="team-img" src="img/team/14.png" alt=""></div>
-                    <div class="team-caption">
-                      <p class="name mt-3 mb-0">SeongChan Lee</p>
-                      <p class="description rank mb-1">Software Engineer</p>
-                      <div class="line my-2 mx-auto"></div>
-                      <ul class="list-inline list-team-social">
-                        <li class="list-inline-item"><a href="https://medium.com/@foriequal0" target="_blank"><img class="active" src="img/team/medium.png"></a>
-                        </li>
-                        <li class="list-inline-item"><a href="https://github.com/foriequal0" target="_blank"><img class="active" src="img/team/github.png"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn mb-3">
-                  <div class="item">
-                    <div class="team-img-container mx-auto"><img class="team-img" src="img/team/15.png" alt=""></div>
-                    <div class="team-caption">
-                      <p class="name mt-3 mb-0">Seunghee Baek</p>
-                      <p class="description rank mb-1">Designer</p>
-                      <div class="line my-2 mx-auto"></div>
-                      <ul class="list-inline list-team-social">
-                        <li class="list-inline-item"><a href="https://medium.com/@tammy17" target="_blank"><img class="active" src="img/team/medium.png"></a>
-                        </li>
-                        <li class="list-inline-item"><a href="https://github.com/tammy17" target="_blank"><img class="active" src="img/team/github.png"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn mb-3">
-                  <div class="item">
-                    <div class="team-img-container mx-auto"><img class="team-img" src="img/team/16.png" alt=""></div>
-                    <div class="team-caption">
-                      <p class="name mt-3 mb-0">Sein Gwon</p>
-                      <p class="description rank mb-1">Designer</p>
-                      <div class="line my-2 mx-auto"></div>
-                      <ul class="list-inline list-team-social">
-                        <li class="list-inline-item"><a href="https://medium.com/@sein.gwon" target="_blank"><img class="active" src="img/team/medium.png"></a>
-                        </li>
-                        <li class="list-inline-item"><a href="https://github.com/SeinGwon" target="_blank"><img class="active" src="img/team/github.png"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn mb-3">
-                  <div class="item">
-                    <div class="team-img-container mx-auto"><img class="team-img" src="img/team/17.png" alt=""></div>
-                    <div class="team-caption">
-                      <p class="name mt-3 mb-0">Jae Won Park</p>
-                      <p class="description rank mb-1">Business Development Lead</p>
-                      <div class="line my-2 mx-auto"></div>
-                      <ul class="list-inline list-team-social">
-                        <li class="list-inline-item"><a href="https://medium.com/@charforme52" target="_blank"><img class="active" src="img/team/medium.png"></a>
-                        </li>
-                        <li class="list-inline-item"><a href="https://twitter.com/JaewonPark4" target="_blank"><img class="active" src="img/team/twitter.png"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn mb-3">
-                  <div class="item">
-                    <div class="team-img-container mx-auto"><img class="team-img" src="img/team/18.png" alt=""></div>
-                    <div class="team-caption">
-                      <p class="name mt-3 mb-0">Seonpyo Kim</p>
-                      <p class="description rank mb-1">Software Engineer</p>
-                      <div class="line my-2 mx-auto"></div>
-                      <ul class="list-inline list-team-social">
-                        <li class="list-inline-item"><a href="https://medium.com/@tomandjerry_76061" target="_blank"><img class="active" src="img/team/medium.png"></a>
-                        </li>
-                        <li class="list-inline-item"><a href="https://github.com/HoOngEe" target="_blank"><img class="active" src="img/team/github.png"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn mb-3">
-                  <div class="item">
-                    <div class="team-img-container mx-auto"><img class="team-img" src="img/team/19.png" alt=""></div>
-                    <div class="team-caption">
-                      <p class="name mt-3 mb-0">Seongjae Choi</p>
-                      <p class="description rank mb-1">Software Engineer</p>
-                      <div class="line my-2 mx-auto"></div>
-                      <ul class="list-inline list-team-social">
-                        <li class="list-inline-item"><a href="https://medium.com/@cubist" target="_blank"><img class="active" src="img/team/medium.png"></a>
-                        </li>
-                        <li class="list-inline-item"><a href="https://github.com/cubismic" target="_blank"><img class="active" src="img/team/github.png"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn mb-3">
-                  <div class="item">
-                    <div class="team-img-container mx-auto"><img class="team-img" src="img/team/20.png" alt=""></div>
-                    <div class="team-caption">
-                      <p class="name mt-3 mb-0">Yunseon Jang</p>
-                      <p class="description rank mb-1">Product Manager</p>
-                      <div class="line my-2 mx-auto"></div>
-                      <ul class="list-inline list-team-social">
-                        <li class="list-inline-item"><a href="https://medium.com/@yseon95" target="_blank"><img class="active" src="img/team/medium.png"></a>
-                        </li>
-                        <li class="list-inline-item"><a href="https://twitter.com/@crypto_leah" target="_blank"><img class="active" src="img/team/twitter.png"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-            <!-- Join Us-->
-            <div class="col-lg-4 col-md-6 wow fadeIn mb-3">
-              <div class="item">
-                <div class="team-img-container mx-auto"><img class="team-img" src="img/team/join-us2.jpg" alt=""></div>
-                <div class="team-caption">
-                  <p class="name mt-3 mb-0">Join us!</p>
-                  <p class="description rank mb-1">hi@kodebox.io</p>
-                </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="project-item py-3 py-sm-3 py-lg-0">
+                <div class="project-img-container"><img class="project-img-1" src="img/project/project2.png"></div>
+                <p class="lead project-title">Zuzu</p>
+                <p class="description project-description mx-auto">A cap table management software</p>
+                <div class="detail-btn mx-auto"><a href="https://zuzu.network" target="_blank">View more</a></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- include ./_includes/team.pug-->
     <section class="page-section" id="talks">
       <div class="container-flude text-center">
         <h2 class="wow fadeIn">TALKS</h2>
